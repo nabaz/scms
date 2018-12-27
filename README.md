@@ -31,7 +31,7 @@ docker-compose run web python manage.py migrate
 navigate to http://0.0.0.0:9001/
 ```
 
-## URL Existed:
+## Api Endpoints:
 ```python
 ^api/courses/$ [name='course-list']
 ^api/courses\.(?P<format>[a-z0-9]+)/?$ [name='course-list']
