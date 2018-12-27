@@ -1,0 +1,3 @@
+from app.serializers.course_serializer import CourseSerializer
+from app.serializers.student_serializer import StudentSerializer
+

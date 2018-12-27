@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:9001
+    volumes:
+      - .:/api
+    env_file: ./scms/.env
+    ports:
+      - "9001:9001"
+    depends_on:
+      - db
