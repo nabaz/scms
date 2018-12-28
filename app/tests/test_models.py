@@ -69,7 +69,7 @@ class StudentTestClass(TestCase):
             gender='F',
             active=True
         )
-        Student.courses = [courses]
+        Student.courses = courses
 
     def test_course_created(self):
         print("Method: test_course_created.")

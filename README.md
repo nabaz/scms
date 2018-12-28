@@ -3,7 +3,7 @@
 This is test app
 
 ## Installation
-
+ 
 - Install [Docker](https://docs.docker.com/docker-for-mac/install/) to successfully run this app.
 - create .env file inside ./scms/.env and define these vars
 Note: for more updated version take a look at .env.example file
