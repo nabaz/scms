@@ -21,4 +21,4 @@ class Student(BaseMixin):
     active = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.user.username
+        return self.user
