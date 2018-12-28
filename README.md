@@ -18,8 +18,7 @@ DB_HOST_PORT=5432
 - inside the root dir run
 
 ```bash
-docker-compose build
-docker-compose up
+docker-compose up --build 
 ```
 
 - migrate db
