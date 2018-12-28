@@ -54,6 +54,28 @@ rest-auth/ ^password/change/$ [name='rest_password_change']
 rest-auth/registration/
 ```
 
+## Create User endpoint (Registration) (Authentication and different permissions)
+
+```
+rest-auth/registration/
+rest-auth/ ^login/$ [name='rest_login'] # for login
+```
+
+## Rate-limitting
+each api endpoint is limitted 1000 request per day per user and this can be changed from setting
+```
+REST_FRAMEWORK = {
+    'DEFAULT_THROTTLE_CLASSES': (
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ),
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '100/day', 
+        'user': '1000/day' 
+    }
+}
+```
+
 ## Running Test
 
 ```python
